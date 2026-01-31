@@ -156,10 +156,10 @@ while check_win_game(main_grid) == False and not perdu:
     coord_player = positionne_request(main_grid)
     if bomb_checker(main_grid, coord_player[0], coord_player[1]):
         perdu = True
-        print("Tu as perdu boloss")
+        print("Perdu !")
         print(show_grid(main_grid))
     else:
         open_case(main_grid, coord_player[0], coord_player[1])
         if check_win_game(main_grid):
-            print("Tu as gagné GG")
+            print("Gagné !")
             print(show_grid(main_grid))
